@@ -43,6 +43,11 @@
       "context_filter": "how_are_you"
     },
     {
+      "tag": "current_temp",
+      "patterns": ["how is the current temperature", "what is the temperature outside", "what is the temperature right now", "what is the temperature at the moment", "what about the temperature", "how is the temperature right now"],
+      "context_set": "current_temp"
+    },
+    {
       "tag": "current_weather",
       "patterns": ["how is the current weather", "how is the weather currently", "how is the weather", "how is the weather at the moment", "what is the current weather", "what is the weather like right now", "how is the weather like right now", "what is the weather"],
       "context_set": "current_weather"
@@ -65,22 +70,22 @@
     {
       "tag": "current_weather_context",
       "patterns": ["how is it currently", "how is it at the moment", "how is it right now", "how about currently", "how about right now"],
-      "context_filter": ["today_weather", "tomorrow_weather", "tonight_weather"]
+      "context_filter": ["current_temp", "today_weather", "tomorrow_weather", "tonight_weather"]
     },
     {
       "tag": "today_weather_context",
       "patterns": ["how is it today", "how about today", "today it is what"],
-      "context_filter": ["current_weather", "tomorrow_weather", "tonight_weather"]
+      "context_filter": ["current_temp", "current_weather", "tomorrow_weather", "tonight_weather"]
     },
     {
       "tag": "tomorrow_weather_context",
       "patterns": ["how is it tomorrow","how about tomorrow"],
-      "context_filter": ["current_weather", "today_weather", "tonight_weather"]
+      "context_filter": ["current_temp", "current_weather", "today_weather", "tonight_weather"]
     },
     {
       "tag": "tonight_weather_context",
       "patterns": ["how is it tonight", "what about tonight", "How about tonight"],
-      "context_filter": ["current_weather", "today_weather", "tomorrow_weather"]
+      "context_filter": ["current_temp", "current_weather", "today_weather", "tomorrow_weather"]
     },
     {
       "tag": "what_can_you_do",
