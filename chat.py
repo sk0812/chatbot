@@ -45,7 +45,6 @@ while True:
         if val > 0.85:
             if check_context_set and check_context_filter is True:
                 if input_1_context in input_2_context:
-                    print("===========CONTEXT==========")
                     if tag in skills:
                         run_skills(tag, text)
                     elif tag in websites:
@@ -62,13 +61,9 @@ while True:
                     break
                 else:
                     if tag in non_context:
-                        print("CHANGE CONTEXT")
                         pass
                     else:
-                        print("NO CONTEXT")
                         context = {}
                     print(response(text, context))
         else:
             print("Sorry sir, i cant do that just yet")
-        print(tag)
-        print(context)
