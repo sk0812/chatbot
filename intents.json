@@ -185,7 +185,7 @@
     },
     {
       "tag": "random_number",
-      "patterns": ["pick a random numebr between", "choose a random number between", "pick a random number between"]
+      "patterns": ["pick a random number between", "choose a random number between", "pick a random number between"]
     },
     {
       "tag": "joke",
