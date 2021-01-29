@@ -3,8 +3,7 @@ from skill_import import skills, run_skills, websites, run_open_websites
 
 context = {}
 inputs = []
-non_context = ["greeting", "thanks", "okay", "no_okay"]
-count = 0
+non_context = ["greeting", "thanks", "okay", "no_okay"]z
 while True:
     text = input("You: ")
     if classify(text):
