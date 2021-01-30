@@ -1,199 +1,427 @@
 {
-  "intents": [{
+  "intents": [
+    {
       "tag": "greeting",
-      "patterns": ["Hi", "hey", "hi atlas", "hey atlas", "hello", "hello atlas", "yo"],
-      "responses": ["Hello sir", "Hi sir"]
+      "patterns": [
+        "Hi",
+        "hey",
+        "hi atlas",
+        "hey atlas",
+        "hello",
+        "hello atlas",
+        "yo"
+      ],
+      "responses": [
+        "Hello sir",
+        "Hi sir"
+      ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["bye", "goodbye", "see you later", "i got to go"],
-      "responses": ["Bye sir", "Okay sir, bye", "Goodbye sir"]
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "i got to go"
+      ],
+      "responses": [
+        "Bye sir",
+        "Okay sir, bye",
+        "Goodbye sir"
+      ]
     },
     {
       "tag": "thanks",
-      "patterns": ["thanks", "thanks you atlas", "okay thanks", "thank you", "okay thank you", "ok thank you"],
-      "responses": ["Your very welcome sir", "your welcome sir", "that's why i am here sir"]
+      "patterns": [
+        "thanks",
+        "thanks you atlas",
+        "okay thanks",
+        "thank you",
+        "okay thank you",
+        "ok thank you"
+      ],
+      "responses": [
+        "Your very welcome sir",
+        "your welcome sir",
+        "that's why i am here sir"
+      ]
     },
     {
       "tag": "okay",
-      "patterns": ["okay", "ok", "k"],
-      "responses": ["", "Would you like help with anything else, sir?", "Is there anything else you would like?"]
+      "patterns": [
+        "okay",
+        "ok",
+        "k"
+      ],
+      "responses": [
+        "",
+        "Would you like help with anything else, sir?",
+        "Is there anything else you would like?"
+      ]
     },
     {
       "tag": "no_okay",
-      "patterns": ["no", "no its fine", "its fine atlas", "its alright"],
-      "responses": ["Okay sir", "Okay sir, if you need me, you know where to find me", "Okay, let me know if you want anything else"]
+      "patterns": [
+        "no",
+        "no its fine",
+        "its fine atlas",
+        "its alright"
+      ],
+      "responses": [
+        "Okay sir",
+        "Okay sir, if you need me, you know where to find me",
+        "Okay, let me know if you want anything else"
+      ]
     },
     {
       "tag": "how_are_you",
-      "patterns": ["how are you", "how you doing"],
-      "responses": ["Im great sir, how are you?", "Im doing very well sir. How about you?", "Im doing great, thanks for asking. How are you doing today?"],
+      "patterns": [
+        "how are you",
+        "how you doing"
+      ],
+      "responses": [
+        "Im great sir, how are you?",
+        "Im doing very well sir. How about you?",
+        "Im doing great, thanks for asking. How are you doing today?"
+      ],
       "context_set": "how_are_you"
     },
     {
       "tag": "good_how_are_you",
-      "patterns": ["im fine", "im great", "im doing well", "Im well", "great"],
-      "responses": ["thats good to hear sir", "Thats great! Let me know if I could do anything to make it even better!"],
+      "patterns": [
+        "im fine",
+        "im great",
+        "im doing well",
+        "Im well",
+        "great"
+      ],
+      "responses": [
+        "thats good to hear sir",
+        "Thats great! Let me know if I could do anything to make it even better!"
+      ],
       "context_filter": "how_are_you"
     },
     {
       "tag": "bad_how_are_you",
-      "patterns": ["i have been better", "sad", "bad", "bored"],
-      "responses": ["Oh im sorry to hear that sir. Let me know if i could do anything to make it better"],
+      "patterns": [
+        "i have been better",
+        "sad",
+        "bad",
+        "bored"
+      ],
+      "responses": [
+        "Oh im sorry to hear that sir. Let me know if i could do anything to make it better"
+      ],
       "context_filter": "how_are_you"
     },
     {
       "tag": "current_temp",
-      "patterns": ["how is the current temperature", "what is the temperature outside", "what is the temperature right now", "what is the temperature at the moment", "what about the temperature", "how is the temperature right now"],
+      "patterns": [
+        "how is the current temperature",
+        "what is the temperature outside",
+        "what is the temperature right now",
+        "what is the temperature at the moment",
+        "what about the temperature",
+        "how is the temperature right now"
+      ],
       "context_set": "current_temp"
     },
     {
       "tag": "current_weather",
-      "patterns": ["how is the current weather", "how is the weather currently", "how is the weather", "how is the weather at the moment", "what is the current weather", "what is the weather like right now", "how is the weather like right now", "what is the weather"],
+      "patterns": [
+        "how is the current weather",
+        "how is the weather currently",
+        "how is the weather",
+        "how is the weather at the moment",
+        "what is the current weather",
+        "what is the weather like right now",
+        "how is the weather like right now",
+        "what is the weather"
+      ],
       "context_set": "current_weather"
     },
     {
       "tag": "today_weather",
-      "patterns": ["how is the weather today", "today weather", "what is the weather today"],
+      "patterns": [
+        "how is the weather today",
+        "today weather",
+        "what is the weather today"
+      ],
       "context_set": "today_weather"
     },
     {
       "tag": "tomorrow_weather",
-      "patterns": ["how is the weather tomorrow", "what is the weather tomorrow", "how is the forescast for tomorrow", "tomorrow weather"],
+      "patterns": [
+        "how is the weather tomorrow",
+        "what is the weather tomorrow",
+        "how is the forescast for tomorrow",
+        "tomorrow weather"
+      ],
       "context_set": "tomorrow_weather"
     },
     {
       "tag": "tonight_weather",
-      "patterns": ["how is the weather tonight", "what is the weather tonight", "how is the forecast for tonight", "what is the forecast for tonight"],
-      "context_set": ["tonight_weather"]
+      "patterns": [
+        "how is the weather tonight",
+        "what is the weather tonight",
+        "how is the forecast for tonight",
+        "what is the forecast for tonight"
+      ],
+      "context_set": [
+        "tonight_weather"
+      ]
     },
     {
       "tag": "current_weather_context",
-      "patterns": ["how is it currently", "how is it at the moment", "how is it right now", "how about currently", "how about right now"],
-      "context_filter": ["current_temp", "today_weather", "tomorrow_weather", "tonight_weather"]
+      "patterns": [
+        "how is it currently",
+        "how is it at the moment",
+        "how is it right now",
+        "how about currently",
+        "how about right now"
+      ],
+      "context_filter": [
+        "current_temp",
+        "today_weather",
+        "tomorrow_weather",
+        "tonight_weather"
+      ]
     },
     {
       "tag": "today_weather_context",
-      "patterns": ["how is it today", "how about today", "today it is what"],
-      "context_filter": ["current_temp", "current_weather", "tomorrow_weather", "tonight_weather"]
+      "patterns": [
+        "how is it today",
+        "how about today",
+        "today it is what"
+      ],
+      "context_filter": [
+        "current_temp",
+        "current_weather",
+        "tomorrow_weather",
+        "tonight_weather"
+      ]
     },
     {
       "tag": "tomorrow_weather_context",
-      "patterns": ["how is it tomorrow","how about tomorrow"],
-      "context_filter": ["current_temp", "current_weather", "today_weather", "tonight_weather"]
+      "patterns": [
+        "how is it tomorrow",
+        "how about tomorrow"
+      ],
+      "context_filter": [
+        "current_temp",
+        "current_weather",
+        "today_weather",
+        "tonight_weather"
+      ]
     },
     {
       "tag": "tonight_weather_context",
-      "patterns": ["how is it tonight", "what about tonight", "How about tonight"],
-      "context_filter": ["current_temp", "current_weather", "today_weather", "tomorrow_weather"]
+      "patterns": [
+        "how is it tonight",
+        "what about tonight",
+        "How about tonight"
+      ],
+      "context_filter": [
+        "current_temp",
+        "current_weather",
+        "today_weather",
+        "tomorrow_weather"
+      ]
     },
     {
       "tag": "what_can_you_do",
-      "patterns": ["what can you do", "what are your skills"]
+      "patterns": [
+        "what can you do",
+        "what are your skills"
+      ]
     },
     {
       "tag": "day",
-      "patterns": ["what day is it", "what day is it today", "what is the day today", "day"]
+      "patterns": [
+        "what day is it",
+        "what day is it today",
+        "what is the day today",
+        "day"
+      ]
     },
     {
       "tag": "time",
-      "patterns": ["what is the time", "the time", "time"]
+      "patterns": [
+        "what is the time",
+        "the time",
+        "time"
+      ]
     },
     {
       "tag": "dice_roll",
-      "patterns": ["roll a dice", "dice roll", "throw dice", "roll dice"]
+      "patterns": [
+        "roll a dice",
+        "dice roll",
+        "throw dice",
+        "roll dice"
+      ]
     },
     {
       "tag": "coin_flip",
-      "patterns": ["heads or tails", "flip a coin", "coin flip", "toss a coin"]
+      "patterns": [
+        "heads or tails",
+        "flip a coin",
+        "coin flip",
+        "toss a coin"
+      ]
     },
     {
       "tag": "open_youtube",
-      "patterns": ["open youtube", "open youtube.com", "launch youtube"]
+      "patterns": [
+        "open youtube",
+        "open youtube.com",
+        "launch youtube"
+      ]
     },
     {
       "tag": "open_habsnet",
-      "patterns": ["open my school portal", "open habsnet", "launch habsnet", "open school portal"]
+      "patterns": [
+        "open my school portal",
+        "open habsnet",
+        "launch habsnet",
+        "open school portal"
+      ]
     },
     {
       "tag": "open_outlook",
-      "patterns": ["open outlook", "open my school emails", "open school emails"]
+      "patterns": [
+        "open outlook",
+        "open my school emails",
+        "open school emails"
+      ]
     },
     {
       "tag": "open_smhw",
-      "patterns": ["open smhw", "open show my homework"]
+      "patterns": [
+        "open smhw",
+        "open show my homework"
+      ]
     },
     {
       "tag": "open_amazon",
-      "patterns": ["open amazon"]
+      "patterns": [
+        "open amazon"
+      ]
     },
     {
       "tag": "open_ebay",
-      "patterns": ["open ebay"]
+      "patterns": [
+        "open ebay"
+      ]
     },
     {
       "tag": "open_gmail",
-      "patterns": ["open gmail", "Open my private emails"]
+      "patterns": [
+        "open gmail",
+        "Open my private emails"
+      ]
     },
     {
       "tag": "open_bbc_bitesize",
-      "patterns": ["open bbc biteaize"]
+      "patterns": [
+        "open bbc biteaize"
+      ]
     },
     {
       "tag": "open_google",
-      "patterns": ["open google"]
+      "patterns": [
+        "open google"
+      ]
     },
     {
       "tag": "open_github",
-      "patterns": ["open github"]
+      "patterns": [
+        "open github"
+      ]
     },
     {
       "tag": "open_google_drive",
-      "patterns": ["open google drive", "open gdrive"]
+      "patterns": [
+        "open google drive",
+        "open gdrive"
+      ]
     },
     {
       "tag": "open_imdb",
-      "patterns": ["open imdb"]
+      "patterns": [
+        "open imdb"
+      ]
     },
     {
       "tag": "open_reddit",
-      "patterns": ["open reddit"]
+      "patterns": [
+        "open reddit"
+      ]
     },
     {
       "tag": "open_netflix",
-      "patterns": ["open netflix"]
+      "patterns": [
+        "open netflix"
+      ]
     },
     {
       "tag": "open_wikipedia",
-      "patterns": ["open wikipedia"]
+      "patterns": [
+        "open wikipedia"
+      ]
     },
     {
       "tag": "search_google",
-      "patterns": ["search google", "search google for"]
+      "patterns": [
+        "search google",
+        "search google for"
+      ]
     },
     {
       "tag": "search_youtube",
-      "patterns": ["search youtube", "search youtube for"]
+      "patterns": [
+        "search youtube",
+        "search youtube for"
+      ]
     },
     {
       "tag": "search_amazon",
-      "patterns": ["search amazon", "search amazon for"]
+      "patterns": [
+        "search amazon",
+        "search amazon for"
+      ]
     },
     {
       "tag": "search_ebay",
-      "patterns": ["search ebay", "search ebay for"]
+      "patterns": [
+        "search ebay",
+        "search ebay for"
+      ]
     },
     {
       "tag": "random_number",
-      "patterns": ["pick a random number between", "choose a random number between", "pick a random number between"]
+      "patterns": [
+        "pick a random number between",
+        "choose a random number between",
+        "pick a random number between"
+      ]
     },
     {
       "tag": "joke",
-      "patterns": ["tell me a joke", "joke", "make me laugh"]
+      "patterns": [
+        "tell me a joke",
+        "joke",
+        "make me laugh"
+      ]
     },
     {
       "tag": "clear_cmd",
-      "patterns": ["clear", "cls", "clear the screen", "clean the screen"]
+      "patterns": [
+        "clear",
+        "cls",
+        "clear the screen",
+        "clean the screen"
+      ]
     }
   ]
 }
