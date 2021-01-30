@@ -4,7 +4,7 @@ import random
 
 context = {}
 inputs = []
-non_context = ["greeting", "thanks", "okay", "no_okay"]
+non_context = ["greeting", "thanks", "okay", "no_okay", "clear_cmd"]
 while True:
     text = input("You: ")
     if classify(text):
@@ -66,5 +66,5 @@ while True:
                         context = {}
                     print(response(text, context))
         else:
-            responses = ["Sorry sir, I can't do that just yet", "Sorry sid, I am unable to do that just yet", "Sorry sir, I don't understand", "Sorry sir, I don't understand that but I am learning every day", "I haven't been trained to do that just yet, but I am learning every day"]
+            responses = ["Sorry sir, I can't do that just yet", "Sorry sir, I am unable to do that just yet", "Sorry sir, I don't understand", "Sorry sir, I don't understand that but I am learning every day", "I haven't been trained to do that just yet, but I am learning every day"]
             print(random.choice(responses))
