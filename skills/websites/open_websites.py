@@ -7,7 +7,7 @@ from websites import *
 def print_res(website):
     responses = [f"Okay sir, opening {website}", f"opening {website}, sir",
                  f"Okay sir, I am opening {website} in your browser", f"opening {website} in your browser, sir"]
-    print(random.choice(reseponses))
+    print(random.choice(responses))
 
 
 def open_websites(tag):
