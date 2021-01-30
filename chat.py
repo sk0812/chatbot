@@ -1,9 +1,10 @@
 from train import response, classify, intents
 from skill_import import skills, run_skills, websites, run_open_websites
+import random
 
 context = {}
 inputs = []
-non_context = ["greeting", "thanks", "okay", "no_okay"]z
+non_context = ["greeting", "thanks", "okay", "no_okay"]
 while True:
     text = input("You: ")
     if classify(text):
@@ -65,4 +66,5 @@ while True:
                         context = {}
                     print(response(text, context))
         else:
-            print("Sorry sir, i cant do that just yet")
+            responses = ["Sorry sir, I can't do that just yet", "Sorry sid, I am unable to do that just yet", "Sorry sir, I don't understand", "Sorry sir, I don't understand that but I am learning every day", "I haven't been trained to do that just yet, but I am learning every day"]
+            print(random.choice(responses))
