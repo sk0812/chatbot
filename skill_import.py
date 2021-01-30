@@ -15,8 +15,9 @@ from skills.search.search_amazon import search_amazon
 from skills.search.search_ebay import search_ebay
 from skills.misc.random_number import random_number
 from skills.misc.joke import joke
+from skills.misc.clear_cmd import cls
 
-skills = ["current_weather", "current_weather_context", "today_weather", "today_weather_context", "tomorrow_weather", "tomorrow_weather_context","dice_roll", "coin_flip", "day", "time", "what_can_you_do", "search_google", "search_amazon", "search_ebay", "search_youtube","random_number", "joke", "tonight_weather", "current_temp"]
+skills = ["current_weather", "current_weather_context", "today_weather", "today_weather_context", "tomorrow_weather", "tomorrow_weather_context","dice_roll", "coin_flip", "day", "time", "what_can_you_do", "search_google", "search_amazon", "search_ebay", "search_youtube","random_number", "joke", "tonight_weather", "current_temp", "clear_cmd"]
 
 websites = ["open_youtube", "open_habsnet", "open_outlook", "open_smhw", "open_amazon", "open_ebay", "open_gmail", "open_bbc_bitesize", "open_google", "open_github", "open_google_drive", "open_imdb", "open_reddit", "open_netflix", "open_wikipedia"]
 
@@ -59,6 +60,8 @@ def run_skills(tag, text):
         random_number(text)
     elif tag == "joke":
         joke()
+    elif tag == "clear_cmd":
+        cls()
 
 
 def run_open_websites(tag):

@@ -190,6 +190,10 @@
     {
       "tag": "joke",
       "patterns": ["tell me a joke", "joke", "make me laugh"]
+    },
+    {
+      "tag": "clear_cmd",
+      "patterns": ["clear", "cls", "clear the screen", "clean the screen"]
     }
   ]
 }
