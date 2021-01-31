@@ -15,7 +15,7 @@ from skills.search.search_amazon import search_amazon
 from skills.search.search_ebay import search_ebay
 from skills.misc.random_number import random_number
 from skills.misc.joke import joke
-from skills.terminal import clear
+from skills.terminal.clear import clear
 
 skills = ["current_weather", "current_weather_context", "today_weather", "today_weather_context", "tomorrow_weather", "tomorrow_weather_context","dice_roll", "coin_flip", "day", "time", "what_can_you_do", "search_google", "search_amazon", "search_ebay", "search_youtube","random_number", "joke", "tonight_weather", "current_temp", "clear_cmd"]
 
