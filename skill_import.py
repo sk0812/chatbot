@@ -61,7 +61,7 @@ def run_skills(tag, text):
     elif tag == "joke":
         joke()
     elif tag == "clear_cmd":
-        cls()
+        clear()
 
 
 def run_open_websites(tag):
