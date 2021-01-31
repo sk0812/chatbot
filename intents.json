@@ -422,6 +422,17 @@
         "clear the screen",
         "clean the screen"
       ]
+    },
+    {
+      "tag": "cwd_cmd",
+      "patterns": [
+        "pwd",
+        "cwd",
+        "where am i",
+        "what is my current directory",
+        "current working directory",
+        "print working directory"
+      ]
     }
   ]
 }
