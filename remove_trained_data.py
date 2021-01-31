@@ -63,3 +63,8 @@ if answer == "yes":
         print("successfully deleted __pycache__ from search")
     else:
         print("__pycache__ does not exist in search")
+    if os.path.exists("skills/terminal/__pycache__"):
+        shutil.rmtree("skills/terminal/__pycache__")
+        print("Successfully deleted __pycache__ from terminal")
+    else:
+        print("__pycache__ does not exist in terminal")
