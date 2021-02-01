@@ -42,7 +42,7 @@ while True:
         else:
             check_context_set = False
             check_context_filter = False
-        if val > 0.85:
+        if val > 0.9:
             if check_context_set and check_context_filter is True:
                 if input_1_context in input_2_context:
                     if tag in skills:
