@@ -109,10 +109,31 @@
       ]
     },
     {
+      "tag": "your_funny",
+      "patterns": ["your funny", "haha that was funny", "lol", "that is hilarous", "that made me laugh"],
+      "responses": ["Sir, was that sarcasm!!", "Haha, im glad you liked it", "That's why everyone loves me", "Good on you sir!", "I got a lot more from where that came from"],
+      "context_set": "your_funny"
+    },
+    {
+      "tag": "your_funny_sarcasm_no",
+      "patterns": ["no, it wasn't sarcasm", "it was not sarcasm", "no it wasn't"],
+      "responses": ["Oh, ok.", "Aha okay sir, let me know if need anything", "I am glad that you find me funny sir"],
+      "context_filter": "your_funny"
+    },
+    {
+      "tag": "your_funny_sarcasm_yes",
+      "patterns": ["yes, that was sarcasm", "Atlas that was sarcasm", "yes that was sarcasm, you got to be funnier", "yes"],
+      "responses": ["Sorry sir, i will try and be better next time. Would you like help with anything?", "Sorry sir, but you're the one who made me. So jokes on you"],
+      "context_filter": "your_funny"
+    },
+    {
       "tag": "how_are_you",
       "patterns": [
         "how are you",
-        "how you doing"
+        "how you doing",
+        "how are you by the way",
+        "how are you today",
+        "how you feeling today, atlas"
       ],
       "responses": [
         "Im great sir, how are you?",
