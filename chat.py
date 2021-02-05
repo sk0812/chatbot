@@ -4,7 +4,7 @@ import random
 
 context = {}
 inputs = []
-non_context = ["greeting", "thanks", "okay", "no_okay", "clear_cmd"]
+non_context = ["greeting", "thanks", "okay", "no_okay", "clear_cmd", "cwd_cmd"]
 while True:
     text = input("You: ")
     if classify(text):
