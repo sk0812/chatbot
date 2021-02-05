@@ -22,7 +22,8 @@
         "bye",
         "goodbye",
         "see you later",
-        "i got to go"
+        "i got to go",
+        "i gotta go"
       ],
       "responses": [
         "Bye sir",
@@ -74,6 +75,33 @@
       ]
     },
     {
+      "tag": "bad_words",
+      "patterns": [
+        "your stupid",
+        "your dumb",
+        "get smart",
+        "your useless",
+        "retard",
+        "i thought you were smart",
+        "i thought you were smart",
+        "Get smart you piece of rubbish",
+        "fuck you",
+        "dumb ass",
+        "bitch",
+        "your a piece of shit",
+        "your shit"
+      ],
+      "responses": [
+        "Oi, sir that's not very nice",
+        "That's not very nice, sir",
+        "Don't say that, that's rude",
+        "That's rude, i have feelings you know",
+        "Sir, why are you angry",
+        "Everything alright sir, you seem off your general mood",
+        "Don't say that, that's quite rude"
+      ]
+    },
+    {
       "tag": "ai_name",
       "patterns": [
         "what is your name",
@@ -110,20 +138,50 @@
     },
     {
       "tag": "your_funny",
-      "patterns": ["your funny", "haha that was funny", "lol", "that is hilarous", "that made me laugh"],
-      "responses": ["Sir, was that sarcasm!!", "Haha, im glad you liked it", "That's why everyone loves me", "Good on you sir!", "I got a lot more from where that came from"],
+      "patterns": [
+        "your funny",
+        "haha that was funny",
+        "lol",
+        "that is hilarous",
+        "that made me laugh",
+        "haha",
+        "funny"
+      ],
+      "responses": [
+        "Sir, was that sarcasm!!",
+        "Haha, im glad you liked it",
+        "That's why everyone loves me",
+        "Good on you sir!",
+        "I got a lot more from where that came from"
+      ],
       "context_set": "your_funny"
     },
     {
       "tag": "your_funny_sarcasm_no",
-      "patterns": ["no, it wasn't sarcasm", "it was not sarcasm", "no it wasn't"],
-      "responses": ["Oh, ok.", "Aha okay sir, let me know if need anything", "I am glad that you find me funny sir"],
+      "patterns": [
+        "no, it wasn't sarcasm",
+        "it was not sarcasm",
+        "no it wasn't"
+      ],
+      "responses": [
+        "Oh, ok.",
+        "Aha okay sir, let me know if need anything",
+        "I am glad that you find me funny sir"
+      ],
       "context_filter": "your_funny"
     },
     {
       "tag": "your_funny_sarcasm_yes",
-      "patterns": ["yes, that was sarcasm", "Atlas that was sarcasm", "yes that was sarcasm, you got to be funnier", "yes"],
-      "responses": ["Sorry sir, i will try and be better next time. Would you like help with anything?", "Sorry sir, but you're the one who made me. So jokes on you"],
+      "patterns": [
+        "yes, that was sarcasm",
+        "Atlas that was sarcasm",
+        "yes that was sarcasm, you got to be funnier",
+        "yes"
+      ],
+      "responses": [
+        "Sorry sir, i will try and be better next time. Would you like help with anything?",
+        "Sorry sir, but you're the one who made me. So jokes on you"
+      ],
       "context_filter": "your_funny"
     },
     {
@@ -289,7 +347,24 @@
       "patterns": [
         "what can you do",
         "what are your skills"
-      ]
+      ],
+      "context_set": "what_can_you_do"
+    },
+    {
+      "tag": "nice_what_can_you_do",
+      "patterns": [
+        "nice",
+        "cool",
+        "that's nice",
+        "wow",
+        "thats amazing"
+      ],
+      "responses": [
+        "Ah thank you",
+        "Thank you sir, you are the one who made me",
+        "Thanks boss"
+      ],
+      "context_filter": "what_can_you_do"
     },
     {
       "tag": "day",
