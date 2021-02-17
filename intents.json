@@ -543,7 +543,18 @@
         "tell me a joke",
         "joke",
         "make me laugh"
-      ]
+      ],
+      "context_set": "joke"
+    },
+    {
+      "tag": "another_joke",
+      "patterns": [
+        "another one",
+        "tell me another one",
+        "another",
+        "one more"
+      ],
+      "context_filter": "joke"
     },
     {
       "tag": "clear_cmd",
