@@ -60,9 +60,7 @@ while True:
                     print(response(text, context))
                     break
                 else:
-                    if tag in non_context:
-                        pass
-                    else:
+                    if tag not in non_context:
                         context = {}
                     print(response(text, context))
         else:
