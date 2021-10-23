@@ -6,4 +6,4 @@ def random_number(text):
     text = sorted(text)
     num_1 = text[0]
     num_2 = text[1]
-    print(random.randint(num_1, num_2))
+    print(random.randrange(num_1, num_2))

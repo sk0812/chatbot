@@ -9,7 +9,10 @@
         "hey atlas",
         "hello",
         "hello atlas",
-        "yo"
+        "yo",
+        "yooooo",
+        "heyyy",
+        "hiiiii"
       ],
       "responses": [
         "Hello sir",
@@ -183,6 +186,20 @@
         "Sorry sir, but you're the one who made me. So jokes on you"
       ],
       "context_filter": "your_funny"
+    },
+    {
+      "tag": "whats_up",
+      "patterns": [
+        "whats up",
+        "what up",
+        "what you up to",
+        "what you doing"
+      ],
+      "responses": [
+          "Nothing much sir, i'm just chilling. Let me know if you need anything?",
+          "What do you think sir? I got nothing to do, you haven't told me anything",
+          "I'm a bit bored, what can I do?"
+      ]
     },
     {
       "tag": "how_are_you",
