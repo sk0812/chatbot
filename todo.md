@@ -5,4 +5,7 @@
   - [ ] printing out unread emails
   - [ ] sending emails
 - [ ] remove item from todo
+- [ ] Marking item in todo as completed
 - [ ] viewing the todo list
+- [ ] Remove trained data
+- [ ] Refresh the program
