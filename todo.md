@@ -1,0 +1,6 @@
+- [ ] function: add {something} to the todo list
+- [ ] Emails
+  - [ ] Number of undread emails
+  - [ ] Replying to emails
+  - [ ] printing out unread emails
+  - [ ] sending emails 
