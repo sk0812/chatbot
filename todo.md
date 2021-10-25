@@ -3,4 +3,6 @@
   - [ ] Number of undread emails
   - [ ] Replying to emails
   - [ ] printing out unread emails
-  - [ ] sending emails 
+  - [ ] sending emails
+- [ ] remove item from todo
+- [ ] viewing the todo list

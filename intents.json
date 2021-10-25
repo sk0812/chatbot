@@ -360,6 +360,16 @@
       ]
     },
     {
+      "tag": "add_item_todo_list",
+      "patterns": [
+        "add to my todo list",
+        "Add this to my todo list",
+        "can you add to my todo list",
+        "add to the todo list",
+        "add this to the todo list"
+      ]
+    },
+    {
       "tag": "what_can_you_do",
       "patterns": [
         "what can you do",

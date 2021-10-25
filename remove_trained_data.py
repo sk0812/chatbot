@@ -68,3 +68,8 @@ if answer == "yes":
         print("Successfully deleted __pycache__ from terminal")
     else:
         print("__pycache__ does not exist in terminal")
+    if os.path.exists("skills/todo_list/__pycache__"):
+        shutil.rmtree("skills/todo_list/__pycache__")
+        print("Successfully deleted __pycache__ from todo list")
+    else:
+        print("__pycache__ does not exist in todo list")
