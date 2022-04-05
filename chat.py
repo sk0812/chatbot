@@ -1,5 +1,5 @@
 from train import response, classify, intents
-from skill_import import skills, run_skills, websites, run_open_websites
+from skill_import import skills, run_skills, websites, apps, run_open_websites, run_open_apps
 import random
 
 context = {}
@@ -49,6 +49,8 @@ while True:
                         run_skills(tag, text)
                     elif tag in websites:
                         run_open_websites(tag)
+                    elif tag in apps:
+                        run_open_apps(tag)
                     else:
                         print(response(text, context))
             else:
@@ -56,6 +58,8 @@ while True:
                     run_skills(tag, text)
                 elif tag in websites:
                     run_open_websites(tag)
+                elif tag in apps:
+                    run_open_apps(tag)
                 elif tag == "goodbye":
                     print(response(text, context))
                     break

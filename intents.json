@@ -437,23 +437,6 @@
       ]
     },
     {
-      "tag": "open_habsnet",
-      "patterns": [
-        "open my school portal",
-        "open habsnet",
-        "launch habsnet",
-        "open school portal"
-      ]
-    },
-    {
-      "tag": "open_outlook",
-      "patterns": [
-        "open outlook",
-        "open my school emails",
-        "open school emails"
-      ]
-    },
-    {
       "tag": "open_smhw",
       "patterns": [
         "open smhw",
@@ -601,6 +584,157 @@
         "what is my current directory",
         "current working directory",
         "print working directory"
+      ]
+    },
+    {
+      "tag": "open_spotify",
+      "patterns": [
+        "open spotify",
+        "launch spotify"
+      ]
+    },
+    {
+      "tag": "open_discord",
+      "patterns": [
+        "open discord",
+        "launch discord"
+      ]
+    },
+    {
+      "tag": "open_spark",
+      "patterns": [
+        "open spark",
+        "launch spark",
+        "open my emails",
+        "launch my emails"
+      ]
+    },
+    {
+      "tag": "open_adobe_illustrator",
+      "patterns": [
+        "open adobe illustrator",
+        "launch adobe illustrator",
+        "open illustrator",
+        "launch illustrator"
+      ]
+    },
+    {
+      "tag": "open_adobe_photoshop",
+      "patterns": [
+        "open adobe photoshop",
+        "launch adobe photoshop",
+        "open photoshop",
+        "launch photoshop"
+      ]
+    },
+    {
+      "tag": "open_adobe_premiere",
+      "patterns": [
+        "open adobe premiere",
+        "launch adobe premiere",
+        "open premiere",
+        "launch premiere"
+      ]
+    },
+    {
+      "tag": "open_brave",
+      "patterns": [
+        "open brave",
+        "launch brave",
+        "open brave browser",
+        "launch brave browser",
+        "open my browser",
+        "launch my browser"
+      ]
+    },
+    {
+      "tag": "open_excel",
+      "patterns": [
+        "open excel",
+        "launch excel",
+        "open microsoft excel",
+        "launch microsoft excel"
+      ]
+    },
+    {
+      "tag": "open_onenote",
+      "patterns": [
+        "open onenote",
+        "launch onenote",
+        "open microsoft onenote",
+        "launch microsoft onenote"
+      ]
+    },
+    {
+      "tag": "open_powerpoint",
+      "patterns": [
+        "open powerpoint",
+        "launch powerpoint",
+        "open microsoft powerpoint",
+        "launch microsoft powerpoint"
+      ]
+    },
+    {
+      "tag": "open_word",
+      "patterns": [
+        "open word",
+        "launch word",
+        "open microsoft word",
+        "launch microsoft word"
+      ]
+    },
+    {
+      "tag": "open_outlook",
+      "patterns": [
+        "open outlook",
+        "launch outlook",
+        "open microsoft outlook",
+        "launch microsoft outlook",
+        "open my school emails"
+      ]
+    },
+    {
+      "tag": "open_teams",
+      "patterns": [
+        "open teams",
+        "launch teams",
+        "open microsoft teams",
+        "launch microsoft teams"
+      ]
+    },
+    {
+      "tag": "open_whatsapp",
+      "patterns": [
+        "open whatsapp",
+        "launch whatsapp"
+      ]
+    },
+    {
+      "tag": "open_proton_vpn",
+      "patterns": [
+        "open proton vpn",
+        "launch proton vpn"
+      ]
+    },
+    {
+      "tag": "open_notion",
+      "patterns": [
+        "open notion",
+        "launch notion"
+      ]
+    },
+    {
+      "tag": "open_ccleaner",
+      "patterns": [
+        "open ccleaner",
+        "launch ccleaner"
+      ]
+    },
+    {
+      "tag": "open_qbittorent",
+      "patterns": [
+        "open qbittorent",
+        "launch qbittorent"
       ]
     }
   ]

@@ -1,7 +1,5 @@
 # list of all the websites
 youtube = "https://youtube.com"
-habsnet = "https://habsnet.habsboys.org.uk/Pages/PupilPortal.aspx"
-outlook = "https://outlook.office365.com/mail/inbox"
 smhw = "https://www.satchelone.com/todos/issued"
 amazon = "https://amazon.co.uk"
 ebay = "https://ebay.co.uk"

@@ -14,12 +14,6 @@ def open_websites(tag):
     if tag == "open_youtube":
         webbrowser.open(youtube, new=2)
         print_res("youtube")
-    elif tag == "open_habsnet":
-        webbrowser.open(habsnet, new=2)
-        print_res("your school portal")
-    elif tag == "open_outlook":
-        webbrowser.open(outlook, new=2)
-        print_res("your school emails")
     elif tag == "open_smhw":
         webbrowser.open(smhw, new=2)
         print_res("show my homework")
