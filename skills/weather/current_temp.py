@@ -20,4 +20,4 @@ def current_temp():
         response = random.choice(responses)
         output(response)
     except:
-        output("Sorry sir, I was unable to get the current temperature. Please try agani later")
+        output("Sorry sir, I was unable to get the current temperature. Please try again later")
