@@ -101,7 +101,7 @@ if os.path.exists("training_data"):
 else:
     # reset underlying graph data
     ops.reset_default_graph()
-    model.fit(train_x, train_y, n_epoch=1000, batch_size=8, show_metric=True)
+    model.fit(train_x, train_y, n_epoch=250, batch_size=8, show_metric=True)
     model.save('model.tflearn')
 
     # save all of our data structures
