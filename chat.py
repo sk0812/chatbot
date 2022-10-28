@@ -1,6 +1,9 @@
 from train import response, classify, intents
 from skill_import import skills, run_skills, websites, apps, run_open_websites, run_open_apps
 import random
+from speak import speak
+from output import output
+
 
 context = {}
 inputs = []
@@ -52,7 +55,7 @@ while True:
                     elif tag in apps:
                         run_open_apps(tag)
                     else:
-                        print(response(text, context))
+                        output(response(text, context))
             else:
                 if tag in skills:
                     run_skills(tag, text)
@@ -61,13 +64,13 @@ while True:
                 elif tag in apps:
                     run_open_apps(tag)
                 elif tag == "goodbye":
-                    print(response(text, context))
+                    output(response(text, context))
                     break
                 else:
                     if tag not in non_context:
                         context = {}
-                    print(response(text, context))
+                    output(response(text, context))
         else:
             responses = ["Sorry sir, I can't do that just yet", "Sorry sir, I am unable to do that just yet", "Sorry sir, I don't understand",
                          "Sorry sir, I don't understand that but I am learning every day", "I haven't been trained to do that just yet, but I am learning every day"]
-            print(random.choice(responses))
+            output(random.choice(responses))

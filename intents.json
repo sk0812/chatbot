@@ -78,6 +78,24 @@
       ]
     },
     {
+      "tag": "stop_talking",
+      "patterns": [
+        "stop speaking",
+        "be quiet",
+        "turn off speech",
+        "stop talking"
+      ]
+    },
+    {
+      "tag": "start_talking",
+      "patterns": [
+        "start talking",
+        "start speaking",
+        "turn on speech",
+        "you can talk now"
+      ]
+    },
+    {
       "tag": "bad_words",
       "patterns": [
         "your stupid",
