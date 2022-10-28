@@ -2,45 +2,48 @@ import requests
 import random
 import datetime
 
-url = "https://api.openweathermap.org/data/2.5/onecall?lat=51.607999153619204&lon=-0.4052549171747347&appid=24e4c072bb37a84df61ecc02544cdd99"
-json_data = requests.get(url).json()
-
-time = datetime.datetime.now()
-hour = time.strftime("%H")
-
-hour = int(hour)
-
-if hour > 15:
-    afternoon = True
-    num = 24 - hour + 3
-    hourly = json_data["hourly"]
-    hour_temps = []
-    for x in hourly[:num]:
-        temp = x["temp"]
-        hour_temps.append(temp)
-    sum = 0
-    for number in hour_temps:
-        sum += number
-    avg = sum / len(hour_temps)
-    night_temp = str(round(avg - 273))
-    descriptions = []
-    for i in hourly[:num]:
-        description = i['weather'][0]["main"]
-        descriptions.append(description)
-    des_counter = {}
-    for word in descriptions:
-        if word in des_counter:
-            des_counter[word] += 1
-        else:
-            des_counter[word] = 1
-    popular_words = sorted(des_counter, key = des_counter.get, reverse=True)
-    night_description = popular_words[:1]
-    night_description = night_description[0]
-else:
-    afternoon = False
 
 
 def current_weather():
+
+    url = "https://api.openweathermap.org/data/2.5/onecall?lat=51.607999153619204&lon=-0.4052549171747347&appid=24e4c072bb37a84df61ecc02544cdd99"
+    json_data = requests.get(url).json()
+
+    time = datetime.datetime.now()
+    hour = time.strftime("%H")
+
+    hour = int(hour)
+
+    if hour > 15:
+        afternoon = True
+        num = 24 - hour + 3
+        hourly = json_data["hourly"]
+        hour_temps = []
+        for x in hourly[:num]:
+            temp = x["temp"]
+            hour_temps.append(temp)
+        sum = 0
+        for number in hour_temps:
+            sum += number
+        avg = sum / len(hour_temps)
+        night_temp = str(round(avg - 273))
+        descriptions = []
+        for i in hourly[:num]:
+            description = i['weather'][0]["main"]
+            descriptions.append(description)
+        des_counter = {}
+        for word in descriptions:
+            if word in des_counter:
+                des_counter[word] += 1
+            else:
+                des_counter[word] = 1
+        popular_words = sorted(des_counter, key = des_counter.get, reverse=True)
+        night_description = popular_words[:1]
+        night_description = night_description[0]
+    else:
+        afternoon = False
+
+
     try:
         temp = json_data["current"]["temp"]
 

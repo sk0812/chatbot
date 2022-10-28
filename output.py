@@ -3,8 +3,6 @@ import configparser
 
 config = configparser.ConfigParser()
 
-
-
 def stop_talking():
 
     config.read('config.ini')

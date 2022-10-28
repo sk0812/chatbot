@@ -1,5 +1,7 @@
 import random
 
+from output import output
+
 jokes = ["i threw a boomerang a few years ago. I now live in constant fear", "My wife accused me of being to immature. I told her to get out of my fort",
          "you don't need a parachute to go skydiving. you need a parachute to go skydiving twice!", "Parallel lines have so much in common. It's a shame they will never meet",
          "Someone stole my mood ring. I don't know how i feel about that", "My grandfather told me not to rely on technology, so i plugged out his life support",
@@ -32,4 +34,4 @@ jokes = ["i threw a boomerang a few years ago. I now live in constant fear", "My
          "The man who invented Velcro has died. RIP", "My friend was explaining electricity to me, but I was like, ‘Watt?’", "What if there were no hypothetical questions?"]
 
 def joke():
-    print(random.choice(jokes))
+    output(random.choice(jokes))

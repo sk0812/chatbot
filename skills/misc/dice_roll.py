@@ -1,4 +1,6 @@
 import random
+from output import output
+
 
 def dice_roll():
-    print(random.randint(1, 6))
+    output(random.randint(1, 6))

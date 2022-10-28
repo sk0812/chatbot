@@ -4,10 +4,15 @@ import random
 sys.path.insert(1, "skills/websites")
 from websites import *
 
+from output import output
+
+
 def print_res(website):
     responses = [f"Okay sir, opening {website}", f"opening {website}, sir",
                  f"Okay sir, I am opening {website} in your browser", f"opening {website} in your browser, sir"]
-    print(random.choice(responses))
+    response = random.choice(responses)
+
+    output(response)
 
 
 def open_websites(tag):

@@ -9,5 +9,5 @@
 - [ ] viewing the todo list
 - [ ] Remove trained data
 - [ ] Refresh the program
-- [ ] test
-- [ ] cancel
+- [ ] Sunset/Sunrise
+- [ ] Maths

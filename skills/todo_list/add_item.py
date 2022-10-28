@@ -1,3 +1,6 @@
+from output import output
+
+
 def add_item_todo_list(text):
     if len(text) > 8:
         text = input("What would you like to add to your todo list? (cancel to cancel): ")
@@ -17,4 +20,4 @@ def add_item_todo_list(text):
             todo_list.write("\n")
             todo_list.write(f"- [ ] {text}")
 
-        print(f"Successfully added '{text}' to your todo list sir!");
+        output(f"Successfully added '{text}' to your todo list sir!");

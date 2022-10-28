@@ -1,9 +1,9 @@
 import random
-
+from output import output
 
 def coin_flip():
     flip_side = random.randint(0, 2)
     if flip_side == 1:
-        print("heads")
+        output("heads")
     else:
-        print("tails")
+        output("tails")

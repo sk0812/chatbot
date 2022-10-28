@@ -2,10 +2,15 @@ import requests
 import random
 import datetime
 
-url = "https://api.openweathermap.org/data/2.5/onecall?lat=51.607999153619204&lon=-0.4052549171747347&appid=24e4c072bb37a84df61ecc02544cdd99"
-json_data = requests.get(url).json()
+from output import output
+
+
 
 def tonight_weather():
+
+    url = "https://api.openweathermap.org/data/2.5/onecall?lat=51.607999153619204&lon=-0.4052549171747347&appid=24e4c072bb37a84df61ecc02544cdd99"
+    json_data = requests.get(url).json()
+
     time = datetime.datetime.now()
     hour = time.strftime("%H")
     hour = int(hour)
@@ -54,4 +59,5 @@ def tonight_weather():
         d2 = "cloudy"
 
     responses = [f"Tonight it is {temp} degrees with {description}, sir", f"Sir, tonight it is {temp} degrees with {description}", f"Sir, tonight you can expect {d2} weather with temperatures of {temp} degrees celsius", f"Tonight's forecast it is {temp} degrees with {d2} weather, sir", f"The forescast for tonight is {temp} degrees with {description}"]
-    print(random.choice(responses))
+    response = random.choice(responses)
+    output(response)

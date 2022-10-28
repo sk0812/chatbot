@@ -6,10 +6,13 @@ from apps import *
 import random
 import os
 
+from output import output
+
 def print_res(app):
     responses = [f"Okay sir, opening {app}", f"opening {app}, sir",
                  f"Okay sir, I am opening {app}"]
-    print(random.choice(responses))
+    response = random.choice(responses)
+    output(response)
 
 def open_app(tag):
     if tag == "open_spotify":
