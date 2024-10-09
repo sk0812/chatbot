@@ -3,19 +3,14 @@ from skills.weather.current_weather import current_weather
 from skills.weather.today_weather import today_weather
 from skills.weather.tomorrow_weather import tomorrow_weather
 from skills.weather.tonight_weather import tonight_weather
-from skills.misc.dice_roll import dice_roll
-from skills.misc.coin_flip import coin_flip
 from skills.websites.open_websites import open_websites
 from skills.apps.open_apps import open_app
 from skills.misc.day import day
 from skills.misc.time import time
-from skills.misc.what_can_you_do import what_can_you_do
 from skills.search.search_google import search_google
 from skills.search.search_youtube import search_youtube
 from skills.search.search_amazon import search_amazon
 from skills.search.search_ebay import search_ebay
-from skills.misc.random_number import random_number
-from skills.misc.joke import joke
 from skills.terminal.clear import clear
 from skills.terminal.cwd import cwd
 from skills.todo_list.add_item import add_item_todo_list
@@ -46,10 +41,6 @@ def run_skills(tag, text):
         tomorrow_weather()
     elif tag == "tonight_weather":
         tonight_weather()
-    elif tag == "dice_roll":
-        dice_roll()
-    elif tag == "coin_flip":
-        coin_flip()
     elif tag == "day":
         day()
     elif tag == "time":
@@ -64,12 +55,6 @@ def run_skills(tag, text):
         search_amazon(text)
     elif tag == "search_ebay":
         search_ebay(text)
-    elif tag == "random_number":
-        random_number(text)
-    elif tag == "joke":
-        joke()
-    elif tag == "another_joke":
-        joke()
     elif tag == "clear_cmd":
         clear()
     elif tag == "cwd_cmd":

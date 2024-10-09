@@ -3,11 +3,11 @@ from skill_import import skills, run_skills, websites, apps, run_open_websites, 
 import random
 from speak import speak
 from output import output
-
+from gpt import gpt_output
 
 context = {}
 inputs = []
-non_context = ["greeting", "thanks", "okay", "no_okay", "clear_cmd", "cwd_cmd"]
+non_context = ["clear_cmd", "cwd_cmd"]
 while True:
     text = input("You: ")
     if classify(text):
@@ -45,7 +45,7 @@ while True:
         else:
             check_context_set = False
             check_context_filter = False
-        if val > 0.9:
+        if val > 0.95:
             if check_context_set and check_context_filter is True:
                 if input_1_context in input_2_context:
                     if tag in skills:
@@ -63,14 +63,11 @@ while True:
                     run_open_websites(tag)
                 elif tag in apps:
                     run_open_apps(tag)
-                elif tag == "goodbye":
-                    output(response(text, context))
-                    break
                 else:
                     if tag not in non_context:
                         context = {}
                     output(response(text, context))
         else:
-            responses = ["Sorry sir, I can't do that just yet", "Sorry sir, I am unable to do that just yet", "Sorry sir, I don't understand",
-                         "Sorry sir, I don't understand that but I am learning every day", "I haven't been trained to do that just yet, but I am learning every day"]
-            output(random.choice(responses))
+            gpt_output(text)
+            print("")
+        print(val)

@@ -1,19 +1,15 @@
-# things we need for NLP
-import json
-import os.path
-import pickle
-import random
-from tensorflow.python.framework import ops
-import tflearn
-import numpy as np
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 
-# things we need for Tensorflow
+import numpy as np
+import tflearn
+import tensorflow as tf
+import random
+import json
+import pickle
+import os
 
-
-# import our chat-bot intents file
 with open('intents.json') as json_data:
     intents = json.load(json_data)
 
@@ -67,7 +63,7 @@ for doc in documents:
 
 # shuffle our features and turn into np.array
 random.shuffle(training)
-training = np.array(training)
+training = np.array(training, dtype="object")
 
 # create train and test lists
 train_x = list(training[:, 0])
@@ -100,8 +96,8 @@ if os.path.exists("training_data"):
 
 else:
     # reset underlying graph data
-    ops.reset_default_graph()
-    model.fit(train_x, train_y, n_epoch=500, batch_size=4, show_metric=True)
+    tf.compat.v1.reset_default_graph()
+    model.fit(train_x, train_y, n_epoch=1000, batch_size=8, show_metric=True)
     model.save('model.tflearn')
 
     # save all of our data structures
@@ -134,7 +130,7 @@ def bow(text, words, show_details=False):
     return(np.array(bag))
 
 
-ERROR_THRESHOLD = 0.25
+ERROR_THRESHOLD = 0.5
 
 
 def classify(text):
